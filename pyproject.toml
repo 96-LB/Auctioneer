@@ -1,8 +1,8 @@
 [tool.poetry]
-name = "auctioneer"
+name = "Auctioneer"
 version = "0.1.0"
-description = ""
-authors = ["Replit user <replituser@example.com>"]
+description = "A quick and dirty Discord bot to post updates for an auction by periodically polling Google Sheets."
+authors = ["lucasbeef00@gmail.com <lucasbeef00@gmail.com>"]
 
 [tool.poetry.dependencies]
 python = "^3.8"
