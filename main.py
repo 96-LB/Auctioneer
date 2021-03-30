@@ -15,7 +15,9 @@ async def update():
                 changed = True
                 for i in range(0, len(sheet[row]), 2):
                     if sheet[row - 1][i] != sheet[row][i]:
-                        await channel.send(f'**{sheet[row][i + 1]}** has bid **{sheet[row][i]}** on response **{responses[i // 2]}**!')
+                        msg = f'**{sheet[row][i + 1]}** has bid **{sheet[row][i]}** on response **{responses[i // 2]}**!'
+                        await channel.send(msg)
+                        print(msg)
                 sheet[0][1] = row + 1
 
             if changed:
