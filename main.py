@@ -31,6 +31,7 @@ async def update():
 async def on_ready():
     global channel
     channel = bot.get_channel(int(os.getenv('CHANNEL')))
-    bot.loop.create_task(update())
+    
+    #bot.loop.create_task(update())
 
 bot.run(os.getenv('TOKEN'))
